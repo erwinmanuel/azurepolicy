@@ -73,6 +73,9 @@
                             "nsgResourceGroup": {
                                 "value": "[resourceGroup().name]"
                             },
+                            "nsgResourceID": {
+                                "value": "[concat(resourceGroup().id, '/providers/Microsoft.Network/networkSecurityGroups/', field('name'))]"
+                            },
                             "storageAccountResourceID": {
                                 "value": "[parameters('storageAccountResourceID')]"
                             },
@@ -108,6 +111,9 @@
                                 "nsgResourceGroup": {
                                     "type": "String"
                                 },
+                                "nsgResourceID": {
+                                    "type": "String"
+                                },
                                 "storageAccountResourceID": {
                                     "type": "String"
                                 },
@@ -140,7 +146,7 @@
                                     "apiVersion": "2020-04-01",
                                     "location": "[parameters('location')]",
                                     "properties": {
-                                        "targetResourceId": "[parameters('nsgResourceGroup')]",
+                                        "targetResourceId": "[parameters('nsgResourceID')]",
                                         "storageId": "[parameters('storageAccountResourceID')]",
                                         "enabled": "true",
                                         "flowAnalyticsConfiguration": {
