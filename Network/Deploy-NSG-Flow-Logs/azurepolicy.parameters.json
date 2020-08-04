@@ -11,7 +11,7 @@
         "type": "String",
         "metadata": {
             "displayName": "Storage Account Resource ID",
-            "description": "Storage Account Resource ID to push flowlog data to. Value must be in this format '/subscriptions/{subscription id}/resourceGroups/{resourceGroup name}/providers/Microsoft.Storage/storageAccounts/{storage account name}'."
+            "description": "Storage Account Resource ID to push flowlog data to. Value must exist and be in this format '/subscriptions/{subscription id}/resourceGroups/{resourceGroup name}/providers/Microsoft.Storage/storageAccounts/{storage account name}'."
         }
     },
     "flowLogRetentionEnable": {
@@ -70,7 +70,7 @@
         "type": "String",
         "metadata": {
             "displayName": "Log Analytics Workspace Resource ID",
-            "description": "Log Analytics Workspace Resource ID to push NSG flowlog data for Traffic Analytics. Value must be in this format '/subscriptions/{subscription id}/resourceGroups/{resourceGroup name}/providers/microsoft.operationalinsights/workspaces/{workspace account name}'."
+            "description": "Log Analytics Workspace Resource ID to push NSG flowlog data for Traffic Analytics. Value must exist and be in this format '/subscriptions/{subscription id}/resourceGroups/{resourceGroup name}/providers/microsoft.operationalinsights/workspaces/{workspace account name}'."
         }
     }
 }
