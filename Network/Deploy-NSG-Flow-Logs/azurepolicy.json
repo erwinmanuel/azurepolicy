@@ -1,6 +1,6 @@
 {
     "displayName": "Deploy NSG flow logs to Storage Account and Log Analytics Workspace in specified Region",
-    "description": "Deploy NSG flow logs to Storage Account and Log Analytics Workspace in specified Region. Note: The storage account used must be in the same region as the NSG.
+    "description": "Deploy NSG flow logs to Storage Account and Log Analytics Workspace in specified Region. Note: The storage account used must be in the same region as the NSG."
     "mode": "All",
     "policyRule": {
         "if": {
